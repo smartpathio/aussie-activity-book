@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
   <meta property="og:title" content="Creative Aussie Adventures – Activity Book for Kids">
   <meta property="og:description" content="Aussie Kids Activity Book – full colour, screen-free fun for children ages 6–8. Mazes, puzzles, stories, reward chart, stickers and more. Perfect for Aussie families!">
   <meta property="og:image" content="mockup.jpg">
-  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:url" content="https://smartpathio.github.io/aussie-activity-book/">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Creative Aussie Adventures – Activity Book for Kids">
@@ -25,7 +25,7 @@
   <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Schema.org Book -->
+  <!-- Schema.org Book + Offer -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +37,18 @@
     },
     "genre": "Children's activity book",
     "inLanguage": "en",
-    "about": "Australian animals, screen-free activities, creativity, logic, fun for kids 6-8"
+    "about": "Australian animals, screen-free activities, creativity, logic, fun for kids 6-8",
+    "publisher": "Sunny Scribbles Publishing",
+    "isbn": "1234567890123",
+    "image": "https://smartpathio.github.io/aussie-activity-book/mockup.jpg",
+    "description": "Aussie Kids Activity Book – full colour, screen-free fun for children ages 6–8. Mazes, puzzles, stories, reward chart, stickers and more.",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://amzn.asia/d/6gfffNq",
+      "priceCurrency": "AUD",
+      "price": "19.99",
+      "availability": "https://schema.org/InStock"
+    }
   }
   </script>
 </head>
@@ -45,7 +56,7 @@
   <!-- Hero Section -->
   <header class="fade-in hero">
     <div class="hero-content">
-      <img src="mockup.jpg" alt="Aussie kids activity book cover with Australian animals" class="cover-img">
+      <img src="mockup.jpg" alt="Aussie kids activity book cover with Australian animals" class="cover-img" loading="lazy">
       <div>
         <h1>Creative Aussie Adventures</h1>
         <h2>Colouring & Activity Book for Kids (Ages 6–8)</h2>
@@ -63,7 +74,7 @@
           📦 Sydney | Melbourne | Brisbane | Perth | Adelaide – and beyond<br><br>
           Less screen time. More smiles. Every page, pure Aussie fun.
         </p>
-        <button class="cta-btn" onclick="window.open('https://amzn.asia/d/6gfffNq','_blank')">Order now on Amazon.com.au</button>
+        <button class="cta-btn" onclick="window.open('https://amzn.asia/d/6gfffNq','_blank')" aria-label="Order now on Amazon.com.au">Order now on Amazon.com.au</button>
       </div>
     </div>
   </header>
@@ -91,9 +102,9 @@
   <section class="fade-in" id="look-inside">
     <h2>Look Inside the Book</h2>
     <div class="look-inside-gallery">
-      <img src="interior1.png" alt="Sample page: Aussie animal maze" class="look-inside-img">
-      <img src="interior2.png" alt="Sample page: Colouring koala" class="look-inside-img">
-      <img src="interior3.png" alt="Sample page: Logic puzzle for kids" class="look-inside-img">
+      <img src="interior1.png" alt="Sample page: Aussie animal maze for kids" class="look-inside-img" loading="lazy">
+      <img src="interior2.png" alt="Sample page: Colouring koala for kids" class="look-inside-img" loading="lazy">
+      <img src="interior3.png" alt="Sample page: Logic puzzle for kids" class="look-inside-img" loading="lazy">
     </div>
   </section>
 
@@ -110,7 +121,12 @@
   <!-- Testimonials Section -->
   <section id="testimonials" class="fade-in">
     <h2>What Parents Say</h2>
-    <div class="testimonials-list" aria-live="polite"></div>
+    <div class="testimonials-list" aria-live="polite">
+      <!-- Statyczne cytaty dla SEO -->
+      <blockquote>“My daughter loves the bright pages and fun puzzles – perfect for rainy days in Sydney!”</blockquote>
+      <blockquote>“A wonderful activity book that keeps my kids engaged and learning without screens. Highly recommend!”</blockquote>
+      <blockquote>“Great value for money and perfect for car trips and holidays.”</blockquote>
+    </div>
   </section>
 
   <!-- FAQ Section -->
@@ -126,6 +142,11 @@
     </ul>
   </section>
 
+  <!-- CTA powtórzony na dole strony -->
+  <section class="fade-in" style="text-align:center;">
+    <button class="cta-btn" onclick="window.open('https://amzn.asia/d/6gfffNq','_blank')" aria-label="Order now on Amazon.com.au">Order now on Amazon.com.au</button>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="fade-in">
     <h2>Contact</h2>
@@ -136,7 +157,7 @@
   <section id="about" class="fade-in">
     <h2>About the Author</h2>
     <div class="about-author">
-      <img src="avatar.jpg" alt="Sunny Scribbles – author of Creative Aussie Adventures" class="author-photo">
+      <img src="avatar.jpg" alt="Sunny Scribbles – author of Creative Aussie Adventures" class="author-photo" loading="lazy">
       <div>
         <p>
           <strong>Sunny Scribbles</strong> is the creator and illustrator of the <strong>Creative Aussie Adventures Activity Book for Kids</strong>. With a passion for <strong>creative education</strong> and a love for <strong>Australian family life</strong>, Sunny designs engaging, screen-free activities for children aged 6–8.
